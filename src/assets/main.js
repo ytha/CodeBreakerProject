@@ -15,11 +15,11 @@ function guess() {
     if(getResults(input.value)) {
         setMessage('You Win! :)');
         showAnswer(true);
-        schowReplay();
+        showReplay();
     } else if(attempt.value >= 10) {
         setMessage('You lose! :(');
         showAnswer(false);
-        schowReplay();
+        showReplay();
     } else {
         setMessage('incorrect, try again.');
     }
@@ -66,7 +66,7 @@ function showAnswer(success) {
     code.innerHTML = answer.value;
 }
 
-function schowReplay() {
+function showReplay() {
     document.getElementById('guessing-div').style.display = "none";
     document.getElementById('replay-div').style.display = "block";
 }
