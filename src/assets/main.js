@@ -21,7 +21,7 @@ function guess() {
         showAnswer(false);
         showReplay();
     } else {
-        setMessage("incorrect, try again.");
+        setMessage("Incorrect, try again.");
     }
 }
 function getResults(input) {
