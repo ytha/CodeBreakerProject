@@ -17,11 +17,11 @@ function guess() {
         showAnswer(true);
         showReplay();
     } else if(attempt.value >= 10) {
-        setMessage('You lose! :(');
+        setMessage('You Lose! :(');
         showAnswer(false);
         showReplay();
     } else {
-        setMessage('incorrect, try again.');
+        setMessage("incorrect, try again.");
     }
 }
 function getResults(input) {
@@ -73,7 +73,7 @@ function showReplay() {
 
 function validateInput (input) {
     if(input.length != 4) {
-        setMessage('Guesses Must be exactly 4 charactors long.');
+        setMessage('Guesses must be exactly 4 characters long.');
         return false;
     }
     return true;
